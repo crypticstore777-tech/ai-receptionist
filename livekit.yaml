@@ -1,0 +1,10 @@
+# LiveKit Cloud deployment config
+# Deploy with: lk app deploy
+agent:
+  name: mysterious-receptionist
+  build:
+    dockerfile: Dockerfile
+  env:
+    - OPENAI_API_KEY
+    - DEEPGRAM_API_KEY
+    - CARTESIA_API_KEY
